@@ -1,0 +1,25 @@
+# 构建产物
+build/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE
+.vs/
+.idea/
+*.swp
+*~
+
+# 调试
+core
+*.dump
