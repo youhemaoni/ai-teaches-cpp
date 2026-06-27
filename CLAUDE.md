@@ -33,6 +33,7 @@ cmake -B build && cmake --build build
 ## 文件与代码约定
 
 - 命名：`xx_topic_subtopic.cpp`（如 `01_variables.cpp`）。
+- 每新增一个示例文件，**必须同时创建配套的空练习文件** `<同目录>/<同名>-practice.cpp`（如 `02_variables.cpp` → `02_variables-practice.cpp`）。练习文件含建议练习任务和「学习进度记录」区，留空给学习者动手填，完成后去 [PROGRESS.md](PROGRESS.md) 勾选对应项。
 - 每个 `.cpp` 顶部必须有中文注释，写明该示例讲解的概念（AI 讲解风格），文件末尾注释给出编译运行命令。
 - 严格警告已全局开启（`-Wall -Wextra -Wpedantic`），新代码应做到零警告。
 - 遵循现代 C++：RAII、智能指针、`auto`、`constexpr`、避免裸 `new`/`delete` 与 C 风格数组。
