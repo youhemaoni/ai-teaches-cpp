@@ -1,4 +1,4 @@
-# 构建产物
+# 构建产物（含单文件编译输出目录 build/single/）
 build/
 *.o
 *.obj

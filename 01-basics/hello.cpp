@@ -11,6 +11,6 @@ int main() {
     return 0;  // 0 表示程序正常结束
 }
 
-// 编译运行：
-//   g++ -std=c++20 hello.cpp -o hello && ./hello
+// 编译运行（产物统一输出到 build/single/，已被 .gitignore 忽略）：
+//   mkdir -p build/single && g++ -std=c++20 hello.cpp -o build/single/hello && ./build/single/hello
 // 或用 CMake：cmake -B build && cmake --build build && ./build/01-basics_hello_cpp
