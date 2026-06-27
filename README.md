@@ -20,7 +20,7 @@
 ## 目录结构
 
 ```
-AI教我学cpp/
+ai-teaches-cpp/
 ├── 01-basics/            # 各阶段学习代码
 ├── ...
 ├── projects/             # 综合实战项目
