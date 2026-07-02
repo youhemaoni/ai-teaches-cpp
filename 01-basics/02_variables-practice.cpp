@@ -16,7 +16,7 @@
 #include <string>
 
 int main() {
-    // 在这里写你的练习代码
+    // 在这里动手练习吧！
 
     return 0;
 }

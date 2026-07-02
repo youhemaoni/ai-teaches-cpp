@@ -3,8 +3,8 @@
 > 每完成一项打勾。日期格式：YYYY-MM-DD
 
 ## 基础阶段
-- [ ] 01-basics — 变量与基本类型
-- [ ] 01-basics — 运算符
+- [x] 01-basics — 变量与基本类型 (2026-07-01)
+- [x] 01-basics — 运算符 (2026-07-01)
 - [ ] 01-basics — 输入输出 (iostream)
 - [ ] 02-control-flow — 分支 (if/switch)
 - [ ] 02-control-flow — 循环 (for/while/range-for)
