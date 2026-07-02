@@ -5,7 +5,7 @@
     "code-runner.clearPreviousOutput": true, // 每次运行清除上次输出
     "code-runner.executorMap": {
         // PowerShell 语法：用 ; 分隔命令，New-Item -Force 创建目录
-        "cpp": "New-Item -ItemType Directory -Force -Path $workspaceRoot/build/single | Out-Null; D:/soft/mingw64/bin/g++.exe -std=c++20 -Wall -Wextra -g -static $dir/$fileName -o $workspaceRoot/build/single/$fileNameWithoutExt.exe; & $workspaceRoot/build/single/$fileNameWithoutExt.exe"
+        "cpp": "New-Item -ItemType Directory -Force -Path $workspaceRoot/build/single | Out-Null; D:/soft/mingw64/bin/g++.exe -std=c++20 -Wall -Wextra -g -static $dir/$fileName -o $workspaceRoot/build/single/$fileNameWithoutExt.exe; chcp 65001 > $null; & $workspaceRoot/build/single/$fileNameWithoutExt.exe"
     },
     // ── 编辑器配置 ──
     "editor.formatOnSave": true, // 保存时自动格式化

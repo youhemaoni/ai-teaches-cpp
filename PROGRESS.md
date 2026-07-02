@@ -5,9 +5,9 @@
 ## 基础阶段
 - [x] 01-basics — 变量与基本类型 (2026-07-01)
 - [x] 01-basics — 运算符 (2026-07-01)
-- [ ] 01-basics — 输入输出 (iostream)
-- [ ] 02-control-flow — 分支 (if/switch)
-- [ ] 02-control-flow — 循环 (for/while/range-for)
+- [x] 01-basics — 输入输出 (iostream) (2026-07-01)
+- [x] 02-control-flow — 分支 (if/switch) (2026-07-01)
+- [x] 02-control-flow — 循环 (for/while/range-for) (2026-07-01)
 - [ ] 03-functions — 函数定义与调用
 - [ ] 03-functions — 参数传递（值/引用/指针）
 - [ ] 03-functions — 函数重载与默认参数

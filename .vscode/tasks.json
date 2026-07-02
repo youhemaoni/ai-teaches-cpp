@@ -21,7 +21,7 @@
         {
             "label": "Run single file (g++)",
             "type": "shell",
-            "command": "New-Item -ItemType Directory -Force -Path '${workspaceFolder}/build/single' | Out-Null; D:/soft/mingw64/bin/g++.exe -std=c++20 -Wall -Wextra -g -static '${file}' -o '${workspaceFolder}/build/single/${fileBasenameNoExtension}.exe'; & '${workspaceFolder}/build/single/${fileBasenameNoExtension}.exe'",
+            "command": "New-Item -ItemType Directory -Force -Path '${workspaceFolder}/build/single' | Out-Null; D:/soft/mingw64/bin/g++.exe -std=c++20 -Wall -Wextra -g -static '${file}' -o '${workspaceFolder}/build/single/${fileBasenameNoExtension}.exe'; chcp 65001 > $null; & '${workspaceFolder}/build/single/${fileBasenameNoExtension}.exe'",
             "group": "test"
         },
         {
