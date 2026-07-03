@@ -8,7 +8,7 @@
 - [x] 01-basics — 输入输出 (iostream) (2026-07-01)
 - [x] 02-control-flow — 分支 (if/switch) (2026-07-01)
 - [x] 02-control-flow — 循环 (for/while/range-for) (2026-07-01)
-- [ ] 03-functions — 函数定义与调用
+- [x] 03-functions — 函数定义与调用 (2026-07-03)
 - [ ] 03-functions — 参数传递（值/引用/指针）
 - [ ] 03-functions — 函数重载与默认参数
 - [ ] 03-functions — lambda 表达式
