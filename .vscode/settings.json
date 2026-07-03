@@ -1,16 +1,24 @@
 {
     // ── Code Runner 配置 ──
-    "code-runner.runInTerminal": true, // 在终端运行（而非输出面板），支持输入
-    "code-runner.saveFileBeforeRun": true, // 运行前自动保存文件
-    "code-runner.clearPreviousOutput": true, // 每次运行清除上次输出
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {
-        // PowerShell 语法：用 ; 分隔命令，New-Item -Force 创建目录
-        "cpp": "New-Item -ItemType Directory -Force -Path $workspaceRoot/build/single | Out-Null; D:/soft/mingw64/bin/g++.exe -std=c++20 -Wall -Wextra -g -static $dir/$fileName -o $workspaceRoot/build/single/$fileNameWithoutExt.exe; chcp 65001 > $null; & $workspaceRoot/build/single/$fileNameWithoutExt.exe"
+        // 【当前：Linux / WSL】bash 语法
+        "cpp": "mkdir -p $workspaceRoot/build/single && g++ -std=c++20 -Wall -Wextra -g $dir/$fileName -o $workspaceRoot/build/single/$fileNameWithoutExt && $workspaceRoot/build/single/$fileNameWithoutExt"
+
+        // 【备选：Windows】PowerShell + MinGW，切换平台时取消下面注释并注释上行：
+        // "cpp": "New-Item -ItemType Directory -Force -Path $workspaceRoot/build/single | Out-Null; D:/soft/mingw64/bin/g++.exe -std=c++20 -Wall -Wextra -g -static $dir/$fileName -o $workspaceRoot/build/single/$fileNameWithoutExt.exe; chcp 65001 > $null; & $workspaceRoot/build/single/$fileNameWithoutExt.exe"
     },
     // ── 编辑器配置 ──
-    "editor.formatOnSave": true, // 保存时自动格式化
-    "files.encoding": "utf8", // 文件编码 UTF-8
+    "editor.formatOnSave": true,
+    "files.encoding": "utf8",
     // ── C/C++ 扩展配置 ──
-    "C_Cpp.default.cppStandard": "c++20", // C++ 标准设为 C++20
-    "C_Cpp.default.compilerPath": "D:/soft/mingw64/bin/g++.exe" // 编译器路径（MinGW-w64 GCC 14.2.0）
+    "C_Cpp.default.cppStandard": "c++20",
+
+    // 【当前：Linux / WSL】系统 GCC
+    "C_Cpp.default.compilerPath": "/usr/bin/g++"
+
+    // 【备选：Windows】MinGW，切换平台时取消下面注释并注释上行：
+    // "C_Cpp.default.compilerPath": "D:/soft/mingw64/bin/g++.exe"
 }
