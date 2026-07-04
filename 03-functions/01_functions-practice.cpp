@@ -12,17 +12,66 @@
 //   - YYYY-MM-DD 学会了：______
 //   - YYYY-MM-DD 卡住的点：______
 
+#include <cmath>
 #include <iostream>
-
+#include <cstdlib>
 // 在这里声明你的函数原型
+int add(int a, int b);
+void print_greeting(const std::string &name);
+bool is_even(int n);
+double circle_area(double radius);
+int factorial(int n);
 
 int main()
 {
-    // 在这里动手练习吧！
+    std::cout << "=============== 1.基础函数调用 =================" << std::endl;
+    int x{5}, y{3};
+    int result{add(x, y)};
+    std::cout << x << " + " << y << " = " << result << std::endl;
+
+    // ---- 2. void 函数（无返回值）----
+    std::cout << "===== 2. void 函数 =====\n";
+    print_greeting("小明");
+    std::cout << "\n";
+
+    std::string name{"cici"};
+    std::cout << name;
+    name = "11";
+    std::cout << name << std::endl;
+
+    for (int i{1}; i <= 5; ++i)
+    {
+        std::cout << i << (is_even(i) ? " 是偶数" : " 是奇数") << " \n";
+    }
+
+    double r{3.0};
+    std::cout << "半径为 " << r << " 的圆面积 = " << circle_area(r) << "\n\n";
 
     return 0;
 }
 
+double circle_area(double radius)
+{
+
+    constexpr double pi{3.14159265};
+    return pi * std::pow(radius, 2);
+}
+
+bool is_even(int n)
+{
+    return n % 2 == 0;
+}
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
+// 打印问候语（无返回值）
+void print_greeting(const std::string &name)
+{
+    std::cout << "你好，" << name << "！欢迎来到 C++ 函数的世界。\n";
+}
 // 在这里定义你的函数
 
 // 编译运行：
